@@ -193,6 +193,14 @@ not to step on.
 5. Resolve the issue when the PR is resolved. Edit the work-in-progress
    to remove the activity.
 
+### Branch activity dashboard
+
+To see at a glance who is working on what, look at the pinned [🔭 Branch &
+file activity](https://github.com/plclub/sf-in-lean/issues/123) issue. It is
+regenerated automatically and shows the status of every active branch and file.
+
+We use this display very actively to make sure we're not stepping on each others' toes and see where coordination is required.
+
 ### Native-Verso chapters and the extractor
 
 Every chapter in every volume is now authored **directly in Verso** — a plain
