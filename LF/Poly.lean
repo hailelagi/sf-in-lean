@@ -734,8 +734,10 @@ chapter, for practice with polymorphism. Complete the proofs below.
 You will likely find useful the following lemmas about append and length
 from Lean's standard library:
 
-   `List.nil_append {α} (as : List α) : [] ++ as = as`
-   `List.cons_append {α} {a : α} {as bs : List α} : a :: as ++ bs = a :: (as ++ bs)`
+```display
+List.nil_append {α} (as : List α) : [] ++ as = as
+List.cons_append {α} {a : α} {as bs : List α} : a :: as ++ bs = a :: (as ++ bs)
+```
 
 :::instructors
 (Maybe outdated after the switch to Lean?)
@@ -959,11 +961,18 @@ Did we literally see `Option Nat` or was it spelled some other way?
 Our last polymorphic type for now is _polymorphic options_.
 Lean's standard library provides `Option α`, with constructors
 `none` and `some x`. (We already saw `Option Nat` in the
-previous chapter.)  Let's briefly look at the definition:
+previous chapter.)  Let's briefly look at the definition, which matches
+the one in the standard library:
+
+```lean
+namespace OptionPlayground
 
 inductive Option (α : Type) : Type where
-   | none : Option α
-   | some (x : α) : Option α
+  | none : Option α
+  | some (x : α) : Option α
+
+end OptionPlayground
+```
 ::::
 
 :::slidebreak
