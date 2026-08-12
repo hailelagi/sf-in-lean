@@ -377,6 +377,8 @@ theorem add_succ : ∀ n m : Nat, n + (succ m) = succ (n + m) := by
   rfl
 ```
 
+### Unfolding
+
 Inside a definition's own library, it's fine to unfold and simplify through
 definitions; when *using* that code, do not "peek through the interface."
 
@@ -870,3 +872,11 @@ We use American English spelling.
 
 For general matters of grammar, punctuation, and usage, we follow
 the [Chicago Manual of Style](https://www.chicagomanualofstyle.org/).
+
+## Informal Proofs
+
+We use informal proofs sparingly, as explanations and exercises when
+teaching reasoning principles and proof techniques in the abstract, as
+opposed to Lean-specific tools.
+
+Informal proofs should be finished with _Qed_.
